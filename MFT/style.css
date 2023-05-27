@@ -1,0 +1,18 @@
+#memory {
+    width: 400px;
+    height: 200px;
+    border: 1px solid #000;
+    margin-bottom: 10px;
+  }
+  
+  #input {
+    margin-bottom: 10px;
+  }
+  
+  #log {
+    width: 400px;
+    height: 200px;
+    border: 1px solid #000;
+    overflow-y: scroll;
+  }
+  

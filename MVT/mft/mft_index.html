@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Multiple Fixed-size Partitioning (MFT)</title>
+  <style>
+    body {
+        position: relative;
+        min-height: 100vh;
+        margin: 0;
+        padding-bottom: 100px; /* Set padding to accommodate the image */
+    }
+
+    .image-container {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    #homeBtn {
+            padding: 10px 20px;
+            background-color: #333456;
+            border: none;
+            color: #FFFFFF;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        #homeBtn:hover {
+            background-color: #555;
+        }
+</style>
+  <style>
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    #memory {
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+
+    #input {
+      margin-bottom: 20px;
+    }
+
+    #input label {
+      margin-right: 20px;
+    }
+
+    #input input[type="number"] {
+      width: 100px;
+      padding: 5px;
+    }
+
+    #input button {
+      padding: 5px 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    #log {
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+  </style>
+</head>
+
+
+<body style="background-color: #dbd4d4;">
+  <div class="image-container">
+    <img src="https://media.cheggcdn.com/study/c59/c5950725-ac70-4c34-8e70-e58b59b85aa8/DC-1483v1.png" alt="Image" width="350" height="500">
+  </div>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      
+      <ul class="nav navbar-nav">
+        <li><a href="#" id="homeBtn">Home</a></li>
+      </ul>
+    </div>
+  </nav>
+  <br>
+  <h1>Multiprogramming with Fixed Tasks (MFT)</h1>
+  <div id="memory"></div>
+  <div id="input">
+    <label for="memory-size">Memory Size:</label>
+    <input type="number" id="memory-size" />
+    <label for="num-blocks">Number of Blocks:</label>
+    <input type="number" id="num-blocks" />
+    <button onclick="initializeMemory()">Initialize Memory</button>
+    <br />
+    <label for="process-size">Process Size:</label>
+    <input type="number" id="process-size" />
+    <button onclick="addNewProcess()">Allocate</button>
+  </div>
+  <div id="log"></div>
+
+  <script src="script.js"></script>
+  <script>
+    document.getElementById("homeBtn").addEventListener("click", function () {
+      window.location.href = "../../../index.html";
+    });
+  </script>
+</body>
+
+</html>

@@ -50,7 +50,7 @@
     margin: auto;
   }
 
-  .btn-get-started {
+  /* .btn-get-started {
     font-family: "Raleway", sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -61,7 +61,7 @@
     transition: 0.5s;
     color: #3498db;
     border: 2px solid #3498db;
-  }
+  } */
 
   /* .btn-get-started:hover {
     background: #3498db;
@@ -144,7 +144,12 @@ left: 0;
 top: 0;
 border-radius: 10px;
 }
-
+p{
+  font-style: italic;
+}
+.bd{
+  font-weight: 1000;
+}
 </style>
 
 <body>
@@ -179,7 +184,7 @@ border-radius: 10px;
         <div class="flex-container">
           <header>
             <div id="header-button">
-              <h1>Page Replacement</h1>
+              <h1 class="bd">Page Replacement</h1>
             
             </div>
 
@@ -206,7 +211,7 @@ border-radius: 10px;
         <div class="sect">
           <div class="row" data-aos="fade-up" data-aos-delay="300">
             <div class="col-lg-3 col-md-4">
-              <div class="icon-box">
+              <div>
                 
                 <a href="./fifo.html">
                   <button class="button-85" role="button">FIFO</button>
@@ -214,7 +219,7 @@ border-radius: 10px;
               </div>
             </div>
             <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-              <div class="icon-box">
+              <div >
                 <!-- <i class="ri-bar-chart-box-line" style="color: #5578ff;"></i> -->
                 <a href="./lru.html">
                   <button class="button-85" role="button">LRU</button>
@@ -222,7 +227,7 @@ border-radius: 10px;
               </div>
             </div>
             <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-              <div class="icon-box">
+              <div >
                 <a href="./optimal.html">
                   <button class="button-85" role="button">Optimal</button>
                 </a>

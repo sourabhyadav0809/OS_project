@@ -61,7 +61,17 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 </head>
-
+<style>
+	.img{
+		align-self: center;
+		position: relative;
+		left: 250px;
+	}
+	.centered{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+  	}
+</style>
 <script>
 
 	var count = 0;
@@ -256,14 +266,13 @@
               <font>Page Replacement Algorithms</font>
             </h1>
           </div>
-          <div class="centered" style="margin-top:60px">
-            <font size="5px">Least Recently Used</font>
-          </div>
+		  <img class="img" src="./images/lru.png" alt="">
           <div class="centered" style="margin-top:50px">
             <font>In Least Recently Used (LRU) algorithm is a Greedy algorithm where the page to be
               replaced
               is least recently used. The idea is based on locality of reference, the least recently used page is not
-              likely.</font>
+              likely.
+			</font>
           </div>
         </div>
         <br><br><br>

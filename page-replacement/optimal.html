@@ -61,7 +61,16 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 </head>
-
+<style>
+	.centered{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+  }
+  .img{
+	position: relative;
+	right: -277px;
+  }
+</style>
 <script>
 
 	var count = 0;
@@ -260,9 +269,10 @@
               <font>Page Replacement Algorithms</font>
             </h1>
           </div>
-          <div class="centered" style="margin-top:60px">
+          <!-- <div class="centered" style="margin-top:60px">
             <font size="5px">Optimal Page Replacement</font>
-          </div>
+          </div> -->
+		  <img class="img" src="./images/optimal.png" alt="">
           <div class="centered" style="margin-top:50px">
             <font>This algorithm targets the page that won't be used for the longest time. It requires the
               OS to

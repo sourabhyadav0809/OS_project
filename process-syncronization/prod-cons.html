@@ -1,0 +1,348 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../../assets/img/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicons/favicon-16x16.png">
+  <link rel="manifest" href="../assets/img/favicons/site.webmanifest">
+  <link rel="mask-icon" href="../assets/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="../assets/img/favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="../assets/img/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../assets/css/style.css" rel="stylesheet">
+
+  <!-- EXTRA LINKS -->
+
+  <link rel="stylesheet" href="./bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <!-- =======================================================
+  * Template Name: Vesperr - v4.7.0
+  * Template URL: https://bootstrapmade.com/vesperr-free-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+  <!-- SCRIPT FOR THE PAGE-->
+  <title>Producer-Consumer</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+
+<body style="background-image: url('blck.jpg');height:1500px">
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <h1><a href="index.html">OS Project</a></h1>
+        <!-- <h3>Group 14</h3> -->
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="../../assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto " href="../index.html">Home</a></li>
+
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs Section ======= -->
+    <section class="inner-page">
+      <div class="container">
+
+        <br><br><br>
+        <div class="flex-container">
+          <header>
+            <div id="header-button" >
+              <h1>Producer-Consumer Problem</h1>
+
+            </div>
+
+
+          </header>
+        </div>
+
+        <div class="container">
+
+          <div style="padding: 23%;">
+            <br><br><br><br>
+
+
+            <button class="btn btn-primary" id="prod" , type="button" , onclick="barrieradd()" ,
+              style="height:10%;width:15%;position:absolute;top:38%;left:5%;font-size:25px;background: gray;border:solid 4px black;">Proceed</button>
+
+            <button class="btn btn-primary" id="prod1" , type="button" ,
+              style="height:10%;width:12%;position:absolute;top:80%;left:15%;font-size:25px;background: red;border:solid 4px black;"
+              disabled="">Produce</button>
+
+            <button class="btn btn-primary" id="con" , type="button" ,
+              style="height:10%;width:12%;position:absolute;top:80%;right:15%;font-size:25px;background: red;border:solid 4px black;"
+              disabled="">Consume</button>
+
+
+
+            <button class="btn btn-primary" type="button" , id="num" , name="num" , class="btn btn-primary" ,
+              style="height:70px;width:300px;position:absolute;top:55%;left:63%;background: rgb(21, 19, 19);border:solid 4px skyblue;font-size:17px">Press
+              on
+              Produce </button>
+            <button class="btn btn-primary" type="button" , id="num" , name="num" , class="btn btn-primary" ,
+              style="height:70px;width:300px;position:absolute;top:55%;left:20%;background: rgb(21, 19, 19);border:solid 4px skyblue;font-size:17px">Buffer
+              size:5 </button>
+
+            <button type="button" , id="one" , name="one" ,
+              style="height:100px;width:165px;position:absolute;border:solid 4px black;top:65%;left:45%;background-color:white">
+            </button>
+
+            <button type="button" , id="two" , name="two" ,
+              style="height:100px;width:165px;border:solid 4px black;position:absolute;top:75%;left:45%;background-color:white">
+            </button>
+
+            <button type="button" , id="three" , name="three" ,
+              style="height:100px;width:165px;border:solid 4px black;position:absolute;top:85%;left:45%;background-color:white">
+            </button>
+
+            <button type="button" , id="four" , name="four" ,
+              style="height:100px;width:165px;border:solid 4px black;position:absolute;top:95%;left:45%;background-color:white">
+            </button>
+
+            <button type="button" , id="five" , name="five" ,
+              style="height:100px;width:165px;border:solid 4px black;position:absolute;top:105%;left:45%;background-color:white">
+            </button>
+          </div>
+
+          <button class="btn btn-warning" id="count" , type="button"
+            style="height:100px;width:165px;border:solid 4px black;position:absolute;top:46%;left:45%;">counter =
+            0</button>
+
+
+        </div>
+    </section>
+
+
+
+
+    <!-- ======= Modules Section ======= -->
+
+
+
+
+
+
+  </main><!-- End #main -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/purecounter/purecounter.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../assets/js/main.js"></script>
+</body>
+
+
+<script type="text/javascript">
+  var queue = [0, 0, 0, 0, 0]; var flag = 0;
+  var rear = -1; var front = -1;
+
+  function counter() {
+    var counter = rear - front + 1;
+    // console.log(rear)
+    if (rear == -1) {
+      var change = document.getElementById("count");
+      change.innerHTML = "counter = 0"
+    }
+    else if (counter == 1) {
+      var change = document.getElementById("count");
+      change.innerHTML = "counter = 1"
+    }
+    if (counter == 2) {
+      var change = document.getElementById("count");
+      change.innerHTML = "counter = 2"
+    }
+    if (counter == 3) {
+      var change = document.getElementById("count");
+      change.innerHTML = "counter = 3"
+    }
+    if (counter == 4) {
+      var change = document.getElementById("count");
+      change.innerHTML = "counter = 4"
+    }
+    if (counter == 5) {
+      var change = document.getElementById("count");
+      change.innerHTML = "counter = 5"
+    }
+  }
+
+  function check() {
+    if (flag > 0) {
+      document.getElementById("con").disabled = false;
+    }
+    if (flag < 4) {
+      document.getElementById("prod1").disabled = false;
+    }
+  }
+
+  function color() {
+    if (queue[0] == 1) {
+      document.getElementById("one").style.backgroundColor = '#00BFFF';
+    }
+    if (queue[1] == 1) {
+      document.getElementById("two").style.backgroundColor = '#00BFFF';
+    }
+    if (queue[2] == 1) {
+      document.getElementById("three").style.backgroundColor = '#00BFFF';
+    }
+    if (queue[3] == 1) {
+      document.getElementById("four").style.backgroundColor = '#00BFFF';
+    }
+    if (queue[4] == 1) {
+      document.getElementById("five").style.backgroundColor = '#00BFFF';
+    }
+
+
+    if (queue[0] == 0) {
+      document.getElementById("one").style.backgroundColor = '#FFFFFF';
+    }
+    if (queue[1] == 0) {
+      document.getElementById("two").style.backgroundColor = '#FFFFFF';
+    }
+    if (queue[2] == 0) {
+      document.getElementById("three").style.backgroundColor = '#FFFFFF';
+    }
+    if (queue[3] == 0) {
+      document.getElementById("four").style.backgroundColor = '#FFFFFF';
+    }
+    if (queue[4] == 0) {
+      document.getElementById("five").style.backgroundColor = '#FFFFFF';
+    }
+
+    check();
+  }
+
+
+  function produce() {
+    flag++;
+    if (flag == 5) {
+      document.getElementById("prod1").disabled = true;
+    }
+    // document.getElementById("prod1").style.color=green;
+    if (front == -1 && rear == -1) {
+      front = 0;
+      rear = 0;
+      queue[rear] = 1;
+    }
+    else {
+      rear = (rear + 1) % 5;
+      queue[rear] = 1;
+    }
+
+    color();
+    counter();
+  }
+
+
+  function consume() {
+    //   myMove();
+    flag--;
+    if (flag == 0) {
+      document.getElementById("con").disabled = true;
+    }
+
+    if (front == rear) {
+      queue[front] = 0;
+      front = -1;
+      rear = -1;
+    }
+    else {
+      queue[front] = 0;
+      front = (front + 1) % 5;
+    }
+    color();
+    counter();
+  }
+  function barrieradd() {
+    var n = Math.random();
+    num = Math.floor(n * 2);
+
+    if (flag == 0 && num == 1) {
+      alert("No item to consume for the consumer!");
+      document.getElementById("num").innerHTML = "No item to consume";
+    }
+
+    else if (flag == 5 && num == 0) {
+
+      document.getElementById("num").innerHTML = "buffer Full to produce";
+      alert("Buffer full can't add the produced item to the buffer!");
+    }
+    else if (num == 0) {
+
+      document.getElementById("prod1").style.backgroundColor = 'green';
+      document.getElementById("con").style.backgroundColor = 'red';
+
+      document.getElementById("num").innerHTML = "producer";
+      produce();
+    }
+    else {
+      document.getElementById("con").style.backgroundColor = 'green';
+      document.getElementById("prod1").style.backgroundColor = 'red';
+
+
+      document.getElementById("num").innerHTML = "consumer";
+      consume();
+    }
+
+
+  }
+
+
+
+
+</script>
+
+
+</html>

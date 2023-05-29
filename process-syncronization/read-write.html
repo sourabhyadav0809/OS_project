@@ -163,12 +163,13 @@
     <button type = "button", id ="writer1", name = "write1", class = "btn btn-primary", style="height:7%;width:10%;position:absolute;top:60%;right:20%;font-size:17px">Writer: </button> -->
     
     <script>
-    var flag=2,count=99;k=0;
+    var flag=0,count=99;k=0,n =0;
        function writer()
        {
-    
+        flag = 0;
        // document.getElementById('textarea').value='';
                     count=0;
+                    
                     document.getElementById("read1").style.visibility = 'hidden';
                     document.getElementById("read2").style.visibility = 'hidden';
                     document.getElementById("read3").style.visibility = 'hidden';
@@ -196,21 +197,24 @@
     
     
        // document.getElementById("doc").disabled = false;
-    
+       
+       flag = 0;
        }
     
        function reader()
        {
+        
+
                             document.getElementById("textarea").disabled=true;
     
-    
+                            
       var n1 = document.getElementById('textarea');
       var n3="";
                   if(k==0)
                   {    flag++;
                           n=flag%4;
-                  }
-    k=0;
+                  } 
+                  k=0;
                 if(count==1)
                 {
     
@@ -218,7 +222,7 @@
                     // document.getElementById("div").style.visibility = 'visible';
                          
                     if(n>=0)
-                   { 
+                    { 
     
                      document.getElementById('textarea1').value='';
                       var n2 = document.getElementById('textarea1');
@@ -231,7 +235,7 @@
                     
                     document.getElementById("read11").style.visibility = 'visible';
     
-                      }
+                    }
                        if(n>=1)
                     {
     
@@ -294,8 +298,9 @@
             count=1;
                     document.getElementById("writer1").style.visibility = 'hidden';
                     document.getElementById("stop").style.visibility = 'hidden';
-    k=1;
-    reader();
+              k=1;
+              flag = 0;
+              reader();
        }
     
     </script>
